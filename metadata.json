@@ -1,0 +1,6 @@
+{
+  "name": "CÂY KIẾN THỨC TOÁN 6",
+  "description": "Website Cây kiến thức Toán 6 trực quan với 11 quả tri thức và chuyên đề Em làm chủ AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

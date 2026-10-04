@@ -1,0 +1,383 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- Sky Gradient -->
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e6091" />
+      <stop offset="40%" stop-color="#3a86c8" />
+      <stop offset="70%" stop-color="#70a9db" />
+      <stop offset="100%" stop-color="#b8d8f8" />
+    </linearGradient>
+
+    <!-- Sun Glow -->
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#fffbeb" />
+      <stop offset="60%" stop-color="#fde047" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Distant Hills -->
+    <linearGradient id="hillFar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4d908e" />
+      <stop offset="100%" stop-color="#277da1" />
+    </linearGradient>
+
+    <linearGradient id="hillMid1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#588157" />
+      <stop offset="100%" stop-color="#3a5a40" />
+    </linearGradient>
+
+    <linearGradient id="hillMid2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6a994e" />
+      <stop offset="100%" stop-color="#386641" />
+    </linearGradient>
+
+    <!-- Main Grassy Mound -->
+    <radialGradient id="groundMain" cx="50%" cy="65%" r="65%">
+      <stop offset="0%" stop-color="#80b918" />
+      <stop offset="45%" stop-color="#55a630" />
+      <stop offset="80%" stop-color="#2b9348" />
+      <stop offset="100%" stop-color="#007f5f" />
+    </radialGradient>
+
+    <!-- Clay Tree Trunk -->
+    <linearGradient id="trunkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5c2e0b" />
+      <stop offset="20%" stop-color="#854d0e" />
+      <stop offset="50%" stop-color="#b45309" />
+      <stop offset="75%" stop-color="#92400e" />
+      <stop offset="100%" stop-color="#451a03" />
+    </linearGradient>
+
+    <!-- Foliage Cloud Gradients -->
+    <radialGradient id="leafGrad1" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#99d98c" />
+      <stop offset="50%" stop-color="#52b788" />
+      <stop offset="85%" stop-color="#2d6a4f" />
+      <stop offset="100%" stop-color="#1b4332" />
+    </radialGradient>
+
+    <radialGradient id="leafGrad2" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#b7e4c7" />
+      <stop offset="45%" stop-color="#74c69d" />
+      <stop offset="80%" stop-color="#40916c" />
+      <stop offset="100%" stop-color="#1b4332" />
+    </radialGradient>
+
+    <radialGradient id="leafGradHighlight" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#d8f3dc" />
+      <stop offset="50%" stop-color="#95d5b2" />
+      <stop offset="85%" stop-color="#52b788" />
+      <stop offset="100%" stop-color="#2d6a4f" />
+    </radialGradient>
+
+    <!-- 3D Clay Apple Gradient -->
+    <radialGradient id="appleClay" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fca5a5" />
+      <stop offset="25%" stop-color="#ef4444" />
+      <stop offset="65%" stop-color="#b91c1c" />
+      <stop offset="90%" stop-color="#7f1d1d" />
+      <stop offset="100%" stop-color="#450a0a" />
+    </radialGradient>
+
+    <!-- Apple Highlight -->
+    <radialGradient id="appleGlint" cx="30%" cy="25%" r="35%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.75" />
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Soft Cloud -->
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#e0f2fe" stop-opacity="0.8" />
+    </linearGradient>
+
+    <filter id="dropShad" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-opacity="0.35" />
+    </filter>
+    <filter id="appleShad" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#1e293b" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- SKY BACKGROUND -->
+  <rect width="1920" height="1080" fill="url(#sky)" />
+
+  <!-- GLOWING SUN (Top Right) -->
+  <circle cx="1750" cy="150" r="160" fill="url(#sunGlow)" />
+  <circle cx="1750" cy="150" r="70" fill="#ffffff" opacity="0.95" />
+
+  <!-- PUFFY CLOUDS -->
+  <!-- Cloud Left 1 -->
+  <g fill="url(#cloudGrad)" filter="url(#dropShad)" opacity="0.85">
+    <ellipse cx="360" cy="150" rx="110" ry="50" />
+    <circle cx="320" cy="130" r="55" />
+    <circle cx="390" cy="120" r="65" />
+    <circle cx="450" cy="145" r="45" />
+  </g>
+  <!-- Cloud Left 2 Far -->
+  <g fill="url(#cloudGrad)" opacity="0.65">
+    <ellipse cx="80" cy="380" rx="130" ry="45" />
+    <circle cx="40" cy="360" r="50" />
+    <circle cx="110" cy="350" r="55" />
+  </g>
+  <!-- Cloud Right 1 -->
+  <g fill="url(#cloudGrad)" filter="url(#dropShad)" opacity="0.8">
+    <ellipse cx="1450" cy="150" rx="100" ry="40" />
+    <circle cx="1410" cy="135" r="48" />
+    <circle cx="1475" cy="130" r="55" />
+  </g>
+  <!-- Cloud Right 2 Far -->
+  <g fill="url(#cloudGrad)" opacity="0.65">
+    <ellipse cx="1850" cy="360" rx="110" ry="45" />
+    <circle cx="1810" cy="340" r="50" />
+  </g>
+
+  <!-- DISTANT ROLLING HILLS -->
+  <path d="M -100 800 Q 250 560 650 680 Q 950 780 1350 620 Q 1700 520 2050 750 L 2050 1150 L -100 1150 Z" fill="url(#hillFar)" opacity="0.6" />
+  <path d="M -100 780 Q 200 620 500 740 Q 800 840 1200 680 Q 1600 560 2050 700 L 2050 1150 L -100 1150 Z" fill="url(#hillMid1)" opacity="0.85" />
+  <path d="M -100 850 Q 300 700 800 790 Q 1300 880 1800 720 Q 1950 680 2050 740 L 2050 1150 L -100 1150 Z" fill="url(#hillMid2)" />
+
+  <!-- MAIN FOREGROUND GRASSY HILL -->
+  <ellipse cx="960" cy="1020" rx="1150" ry="270" fill="url(#groundMain)" />
+
+  <!-- FLOWERS ON THE MEADOW -->
+  <!-- Daisies (White) -->
+  <g transform="translate(80, 890)"><circle cx="0" cy="0" r="16" fill="#ffffff"/><circle cx="-25" cy="-5" r="15" fill="#ffffff"/><circle cx="25" cy="-5" r="15" fill="#ffffff"/><circle cx="0" cy="-28" r="15" fill="#ffffff"/><circle cx="-18" cy="-22" r="15" fill="#ffffff"/><circle cx="18" cy="-22" r="15" fill="#ffffff"/><circle cx="0" cy="-10" r="14" fill="#eab308"/></g>
+  <g transform="translate(190, 930)"><circle cx="0" cy="0" r="14" fill="#ffffff"/><circle cx="-20" cy="-4" r="13" fill="#ffffff"/><circle cx="20" cy="-4" r="13" fill="#ffffff"/><circle cx="0" cy="-24" r="13" fill="#ffffff"/><circle cx="-15" cy="-18" r="13" fill="#ffffff"/><circle cx="15" cy="-18" r="13" fill="#ffffff"/><circle cx="0" cy="-8" r="12" fill="#eab308"/></g>
+  <g transform="translate(440, 960)"><circle cx="0" cy="0" r="14" fill="#ffffff"/><circle cx="-20" cy="-4" r="13" fill="#ffffff"/><circle cx="20" cy="-4" r="13" fill="#ffffff"/><circle cx="0" cy="-24" r="13" fill="#ffffff"/><circle cx="0" cy="-8" r="12" fill="#eab308"/></g>
+  <g transform="translate(1750, 920)"><circle cx="0" cy="0" r="18" fill="#ffffff"/><circle cx="-28" cy="-6" r="17" fill="#ffffff"/><circle cx="28" cy="-6" r="17" fill="#ffffff"/><circle cx="0" cy="-32" r="17" fill="#ffffff"/><circle cx="0" cy="-12" r="16" fill="#eab308"/></g>
+  <g transform="translate(1870, 870)"><circle cx="0" cy="0" r="20" fill="#ffffff"/><circle cx="-30" cy="-6" r="18" fill="#ffffff"/><circle cx="30" cy="-6" r="18" fill="#ffffff"/><circle cx="0" cy="-35" r="18" fill="#ffffff"/><circle cx="0" cy="-14" r="18" fill="#eab308"/></g>
+  <!-- Yellow Buttercups -->
+  <g transform="translate(1550, 890)"><circle cx="0" cy="0" r="16" fill="#f59e0b"/><circle cx="-18" cy="-6" r="15" fill="#f59e0b"/><circle cx="18" cy="-6" r="15" fill="#f59e0b"/><circle cx="0" cy="-20" r="15" fill="#f59e0b"/><circle cx="0" cy="-7" r="12" fill="#b45309"/></g>
+  <g transform="translate(1650, 930)"><circle cx="0" cy="0" r="14" fill="#f59e0b"/><circle cx="-16" cy="-5" r="13" fill="#f59e0b"/><circle cx="16" cy="-5" r="13" fill="#f59e0b"/><circle cx="0" cy="-18" r="13" fill="#f59e0b"/><circle cx="0" cy="-6" r="10" fill="#b45309"/></g>
+  <g transform="translate(1780, 960)"><circle cx="0" cy="0" r="18" fill="#f59e0b"/><circle cx="-20" cy="-6" r="16" fill="#f59e0b"/><circle cx="20" cy="-6" r="16" fill="#f59e0b"/><circle cx="0" cy="-22" r="16" fill="#f59e0b"/><circle cx="0" cy="-8" r="13" fill="#b45309"/></g>
+  <!-- Pink & Purple Flowers -->
+  <g transform="translate(1360, 960)"><circle cx="0" cy="0" r="15" fill="#ec4899"/><circle cx="-18" cy="-5" r="14" fill="#ec4899"/><circle cx="18" cy="-5" r="14" fill="#ec4899"/><circle cx="0" cy="-20" r="14" fill="#ec4899"/><circle cx="0" cy="-7" r="11" fill="#fef08a"/></g>
+  <g transform="translate(1480, 940)"><circle cx="0" cy="0" r="13" fill="#a855f7"/><circle cx="-15" cy="-4" r="12" fill="#a855f7"/><circle cx="15" cy="-4" r="12" fill="#a855f7"/><circle cx="0" cy="-17" r="12" fill="#a855f7"/><circle cx="0" cy="-6" r="9" fill="#fef08a"/></g>
+
+  <!-- BUTTERFLIES -->
+  <!-- Purple Butterfly Left -->
+  <g transform="translate(330, 810) rotate(-15)">
+    <ellipse cx="-14" cy="-14" rx="18" ry="12" fill="#8b5cf6" transform="rotate(35 -14 -14)"/>
+    <ellipse cx="14" cy="-14" rx="18" ry="12" fill="#a78bfa" transform="rotate(-35 14 -14)"/>
+    <ellipse cx="-10" cy="8" rx="12" ry="8" fill="#7c3aed" transform="rotate(-20 -10 8)"/>
+    <ellipse cx="10" cy="8" rx="12" ry="8" fill="#8b5cf6" transform="rotate(20 10 8)"/>
+    <line x1="0" y1="-20" x2="0" y2="16" stroke="#4c1d95" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <!-- Pink Butterfly Right -->
+  <g transform="translate(1420, 790) rotate(15)">
+    <ellipse cx="-14" cy="-14" rx="18" ry="12" fill="#f43f5e" transform="rotate(35 -14 -14)"/>
+    <ellipse cx="14" cy="-14" rx="18" ry="12" fill="#fb7185" transform="rotate(-35 14 -14)"/>
+    <ellipse cx="-10" cy="8" rx="12" ry="8" fill="#e11d48" transform="rotate(-20 -10 8)"/>
+    <ellipse cx="10" cy="8" rx="12" ry="8" fill="#f43f5e" transform="rotate(20 10 8)"/>
+    <line x1="0" y1="-20" x2="0" y2="16" stroke="#881337" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- TREE SHADOW ON GROUND -->
+  <ellipse cx="960" cy="960" rx="350" ry="60" fill="#1b4332" opacity="0.4" />
+
+  <!-- TREE TRUNK (Center x: 960, y: 550 to 950) -->
+  <g id="trunk" filter="url(#dropShad)">
+    <!-- Spreading Roots -->
+    <path d="M 740 960 Q 860 920 900 840 Q 960 830 1020 840 Q 1060 920 1180 960 C 1120 965 1060 930 1020 890 C 970 895 950 895 900 890 C 860 930 800 965 740 960 Z" fill="#3d1403" />
+    <!-- Trunk Body branching out -->
+    <path d="M 890 890
+             C 900 780 870 690 770 610
+             C 830 630 880 665 915 710
+             C 920 630 910 560 920 500
+             C 935 480 970 480 985 500
+             C 990 560 985 630 990 710
+             C 1025 665 1070 630 1130 610
+             C 1030 690 1000 780 1010 890
+             Z" fill="url(#trunkGrad)" stroke="#270f03" stroke-width="4" stroke-linejoin="round" />
+  </g>
+
+  <!-- CLUSTERED LUSH FOLIAGE (DOME SHAPE) -->
+  <g id="foliage" filter="url(#dropShad)">
+    <!-- Back darker layer -->
+    <ellipse cx="960" cy="440" rx="540" ry="350" fill="url(#leafGrad1)" />
+    <circle cx="650" cy="480" r="240" fill="url(#leafGrad1)" />
+    <circle cx="1270" cy="480" r="240" fill="url(#leafGrad1)" />
+    <circle cx="750" cy="300" r="260" fill="url(#leafGrad1)" />
+    <circle cx="1170" cy="300" r="260" fill="url(#leafGrad1)" />
+    <circle cx="960" cy="240" r="280" fill="url(#leafGrad1)" />
+
+    <!-- Mid layer with richer greens -->
+    <ellipse cx="960" cy="420" rx="480" ry="300" fill="url(#leafGrad2)" />
+    <circle cx="670" cy="440" r="200" fill="url(#leafGrad2)" />
+    <circle cx="1250" cy="440" r="200" fill="url(#leafGrad2)" />
+    <circle cx="780" cy="280" r="210" fill="url(#leafGrad2)" />
+    <circle cx="1140" cy="280" r="210" fill="url(#leafGrad2)" />
+    <circle cx="960" cy="220" r="220" fill="url(#leafGrad2)" />
+
+    <!-- Top highlights (Sun catching foliage) -->
+    <circle cx="1050" cy="180" r="160" fill="url(#leafGradHighlight)" opacity="0.85" />
+    <circle cx="1200" cy="250" r="150" fill="url(#leafGradHighlight)" opacity="0.85" />
+    <circle cx="880" cy="220" r="160" fill="url(#leafGradHighlight)" opacity="0.7" />
+    <circle cx="730" cy="340" r="150" fill="url(#leafGradHighlight)" opacity="0.75" />
+    <circle cx="1190" cy="380" r="140" fill="url(#leafGradHighlight)" opacity="0.8" />
+  </g>
+
+  <!-- 11 CLAY APPLES (EXACT PERCENTAGE COORDINATES)
+       Width 1920, Height 1080. Apple Diameter: 5.5% of 1920 = 105.6px (radius = 52.8px)
+  -->
+  <g id="apples">
+
+    <!-- Apple Số tự nhiên at (40.6%, 24.0%) -> (779.5, 259.2) -->
+    <g filter="url(#appleShad)">
+      <!-- Pedicel (stem) -->
+      <path d="M 779.5 212.4 Q 791.5 184.4 787.5 174.4" fill="none" stroke="#451a03" stroke-width="6" stroke-linecap="round" />
+      <!-- Leaf -->
+      <path d="M 787.5 186.4 Q 814.5 170.4 819.5 190.4 Q 804.5 194.4 787.5 186.4" fill="#84cc16" stroke="#365314" stroke-width="2" />
+      <!-- Apple Main Body -->
+      <circle cx="779.5" cy="259.2" r="52.8" fill="url(#appleClay)" stroke="#ffffff" stroke-width="1.5" />
+      <!-- Top dimple indent -->
+      <path d="M 761.5 220.4 Q 779.5 232.4 797.5 220.4" fill="none" stroke="#7f1d1d" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+      <!-- Glossy 3D Highlight -->
+      <circle cx="779.5" cy="259.2" r="52.8" fill="url(#appleGlint)" />
+    </g>
+
+    <!-- Apple Tính chia hết at (46.2%, 38.2%) -> (887.0, 412.6) -->
+    <g filter="url(#appleShad)">
+      <!-- Pedicel (stem) -->
+      <path d="M 887.0 365.8 Q 899.0 337.8 895.0 327.8" fill="none" stroke="#451a03" stroke-width="6" stroke-linecap="round" />
+      <!-- Leaf -->
+      <path d="M 895.0 339.8 Q 922.0 323.8 927.0 343.8 Q 912.0 347.8 895.0 339.8" fill="#84cc16" stroke="#365314" stroke-width="2" />
+      <!-- Apple Main Body -->
+      <circle cx="887.0" cy="412.6" r="52.8" fill="url(#appleClay)" stroke="#ffffff" stroke-width="1.5" />
+      <!-- Top dimple indent -->
+      <path d="M 869.0 373.8 Q 887.0 385.8 905.0 373.8" fill="none" stroke="#7f1d1d" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+      <!-- Glossy 3D Highlight -->
+      <circle cx="887.0" cy="412.6" r="52.8" fill="url(#appleGlint)" />
+    </g>
+
+    <!-- Apple Số nguyên at (34.9%, 40.3%) -> (670.1, 435.2) -->
+    <g filter="url(#appleShad)">
+      <!-- Pedicel (stem) -->
+      <path d="M 670.1 388.4 Q 682.1 360.4 678.1 350.4" fill="none" stroke="#451a03" stroke-width="6" stroke-linecap="round" />
+      <!-- Leaf -->
+      <path d="M 678.1 362.4 Q 705.1 346.4 710.1 366.4 Q 695.1 370.4 678.1 362.4" fill="#84cc16" stroke="#365314" stroke-width="2" />
+      <!-- Apple Main Body -->
+      <circle cx="670.1" cy="435.2" r="52.8" fill="url(#appleClay)" stroke="#ffffff" stroke-width="1.5" />
+      <!-- Top dimple indent -->
+      <path d="M 652.1 396.4 Q 670.1 408.4 688.1 396.4" fill="none" stroke="#7f1d1d" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+      <!-- Glossy 3D Highlight -->
+      <circle cx="670.1" cy="435.2" r="52.8" fill="url(#appleGlint)" />
+    </g>
+
+    <!-- Apple Phân số at (44.4%, 55.6%) -> (852.5, 600.5) -->
+    <g filter="url(#appleShad)">
+      <!-- Pedicel (stem) -->
+      <path d="M 852.5 553.7 Q 864.5 525.7 860.5 515.7" fill="none" stroke="#451a03" stroke-width="6" stroke-linecap="round" />
+      <!-- Leaf -->
+      <path d="M 860.5 527.7 Q 887.5 511.7 892.5 531.7 Q 877.5 535.7 860.5 527.7" fill="#84cc16" stroke="#365314" stroke-width="2" />
+      <!-- Apple Main Body -->
+      <circle cx="852.5" cy="600.5" r="52.8" fill="url(#appleClay)" stroke="#ffffff" stroke-width="1.5" />
+      <!-- Top dimple indent -->
+      <path d="M 834.5 561.7 Q 852.5 573.7 870.5 561.7" fill="none" stroke="#7f1d1d" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+      <!-- Glossy 3D Highlight -->
+      <circle cx="852.5" cy="600.5" r="52.8" fill="url(#appleGlint)" />
+    </g>
+
+    <!-- Apple Số thập phân at (33.8%, 58.4%) -> (649.0, 630.7) -->
+    <g filter="url(#appleShad)">
+      <!-- Pedicel (stem) -->
+      <path d="M 649.0 583.9 Q 661.0 555.9 657.0 545.9" fill="none" stroke="#451a03" stroke-width="6" stroke-linecap="round" />
+      <!-- Leaf -->
+      <path d="M 657.0 557.9 Q 684.0 541.9 689.0 561.9 Q 674.0 565.9 657.0 557.9" fill="#84cc16" stroke="#365314" stroke-width="2" />
+      <!-- Apple Main Body -->
+      <circle cx="649.0" cy="630.7" r="52.8" fill="url(#appleClay)" stroke="#ffffff" stroke-width="1.5" />
+      <!-- Top dimple indent -->
+      <path d="M 631.0 591.9 Q 649.0 603.9 667.0 591.9" fill="none" stroke="#7f1d1d" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+      <!-- Glossy 3D Highlight -->
+      <circle cx="649.0" cy="630.7" r="52.8" fill="url(#appleGlint)" />
+    </g>
+
+    <!-- Apple Hình phẳng at (60.2%, 25.0%) -> (1155.8, 270.0) -->
+    <g filter="url(#appleShad)">
+      <!-- Pedicel (stem) -->
+      <path d="M 1155.8 223.2 Q 1167.8 195.2 1163.8 185.2" fill="none" stroke="#451a03" stroke-width="6" stroke-linecap="round" />
+      <!-- Leaf -->
+      <path d="M 1163.8 197.2 Q 1190.8 181.2 1195.8 201.2 Q 1180.8 205.2 1163.8 197.2" fill="#84cc16" stroke="#365314" stroke-width="2" />
+      <!-- Apple Main Body -->
+      <circle cx="1155.8" cy="270.0" r="52.8" fill="url(#appleClay)" stroke="#ffffff" stroke-width="1.5" />
+      <!-- Top dimple indent -->
+      <path d="M 1137.8 231.2 Q 1155.8 243.2 1173.8 231.2" fill="none" stroke="#7f1d1d" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+      <!-- Glossy 3D Highlight -->
+      <circle cx="1155.8" cy="270.0" r="52.8" fill="url(#appleGlint)" />
+    </g>
+
+    <!-- Apple Tính đối xứng at (57.6%, 40.3%) -> (1105.9, 435.2) -->
+    <g filter="url(#appleShad)">
+      <!-- Pedicel (stem) -->
+      <path d="M 1105.9 388.4 Q 1117.9 360.4 1113.9 350.4" fill="none" stroke="#451a03" stroke-width="6" stroke-linecap="round" />
+      <!-- Leaf -->
+      <path d="M 1113.9 362.4 Q 1140.9 346.4 1145.9 366.4 Q 1130.9 370.4 1113.9 362.4" fill="#84cc16" stroke="#365314" stroke-width="2" />
+      <!-- Apple Main Body -->
+      <circle cx="1105.9" cy="435.2" r="52.8" fill="url(#appleClay)" stroke="#ffffff" stroke-width="1.5" />
+      <!-- Top dimple indent -->
+      <path d="M 1087.9 396.4 Q 1105.9 408.4 1123.9 396.4" fill="none" stroke="#7f1d1d" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+      <!-- Glossy 3D Highlight -->
+      <circle cx="1105.9" cy="435.2" r="52.8" fill="url(#appleGlint)" />
+    </g>
+
+    <!-- Apple Đường thẳng và góc at (66.8%, 39.6%) -> (1282.6, 427.7) -->
+    <g filter="url(#appleShad)">
+      <!-- Pedicel (stem) -->
+      <path d="M 1282.6 380.9 Q 1294.6 352.9 1290.6 342.9" fill="none" stroke="#451a03" stroke-width="6" stroke-linecap="round" />
+      <!-- Leaf -->
+      <path d="M 1290.6 354.9 Q 1317.6 338.9 1322.6 358.9 Q 1307.6 362.9 1290.6 354.9" fill="#84cc16" stroke="#365314" stroke-width="2" />
+      <!-- Apple Main Body -->
+      <circle cx="1282.6" cy="427.7" r="52.8" fill="url(#appleClay)" stroke="#ffffff" stroke-width="1.5" />
+      <!-- Top dimple indent -->
+      <path d="M 1264.6 388.9 Q 1282.6 400.9 1300.6 388.9" fill="none" stroke="#7f1d1d" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+      <!-- Glossy 3D Highlight -->
+      <circle cx="1282.6" cy="427.7" r="52.8" fill="url(#appleGlint)" />
+    </g>
+
+    <!-- Apple Dữ liệu và biểu đồ at (57.6%, 56.3%) -> (1105.9, 608.0) -->
+    <g filter="url(#appleShad)">
+      <!-- Pedicel (stem) -->
+      <path d="M 1105.9 561.2 Q 1117.9 533.2 1113.9 523.2" fill="none" stroke="#451a03" stroke-width="6" stroke-linecap="round" />
+      <!-- Leaf -->
+      <path d="M 1113.9 535.2 Q 1140.9 519.2 1145.9 539.2 Q 1130.9 543.2 1113.9 535.2" fill="#84cc16" stroke="#365314" stroke-width="2" />
+      <!-- Apple Main Body -->
+      <circle cx="1105.9" cy="608.0" r="52.8" fill="url(#appleClay)" stroke="#ffffff" stroke-width="1.5" />
+      <!-- Top dimple indent -->
+      <path d="M 1087.9 569.2 Q 1105.9 581.2 1123.9 569.2" fill="none" stroke="#7f1d1d" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+      <!-- Glossy 3D Highlight -->
+      <circle cx="1105.9" cy="608.0" r="52.8" fill="url(#appleGlint)" />
+    </g>
+
+    <!-- Apple Xác suất thực nghiệm at (67.9%, 56.3%) -> (1303.7, 608.0) -->
+    <g filter="url(#appleShad)">
+      <!-- Pedicel (stem) -->
+      <path d="M 1303.7 561.2 Q 1315.7 533.2 1311.7 523.2" fill="none" stroke="#451a03" stroke-width="6" stroke-linecap="round" />
+      <!-- Leaf -->
+      <path d="M 1311.7 535.2 Q 1338.7 519.2 1343.7 539.2 Q 1328.7 543.2 1311.7 535.2" fill="#84cc16" stroke="#365314" stroke-width="2" />
+      <!-- Apple Main Body -->
+      <circle cx="1303.7" cy="608.0" r="52.8" fill="url(#appleClay)" stroke="#ffffff" stroke-width="1.5" />
+      <!-- Top dimple indent -->
+      <path d="M 1285.7 569.2 Q 1303.7 581.2 1321.7 569.2" fill="none" stroke="#7f1d1d" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+      <!-- Glossy 3D Highlight -->
+      <circle cx="1303.7" cy="608.0" r="52.8" fill="url(#appleGlint)" />
+    </g>
+
+    <!-- Apple Em làm chủ AI at (52.0%, 25.0%) -> (998.4, 270.0) -->
+    <g filter="url(#appleShad)">
+      <!-- Pedicel (stem) -->
+      <path d="M 998.4 223.2 Q 1010.4 195.2 1006.4 185.2" fill="none" stroke="#451a03" stroke-width="6" stroke-linecap="round" />
+      <!-- Leaf -->
+      <path d="M 1006.4 197.2 Q 1033.4 181.2 1038.4 201.2 Q 1023.4 205.2 1006.4 197.2" fill="#84cc16" stroke="#365314" stroke-width="2" />
+      <!-- Apple Main Body -->
+      <circle cx="998.4" cy="270.0" r="52.8" fill="url(#appleClay)" stroke="#ffffff" stroke-width="1.5" />
+      <!-- Top dimple indent -->
+      <path d="M 980.4 231.2 Q 998.4 243.2 1016.4 231.2" fill="none" stroke="#7f1d1d" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+      <!-- Glossy 3D Highlight -->
+      <circle cx="998.4" cy="270.0" r="52.8" fill="url(#appleGlint)" />
+    </g>
+
+  </g>
+</svg>
